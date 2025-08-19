@@ -2,120 +2,140 @@
     {
         "id":1,
         "nombre":"Batatas",
+        "categoria":"Verduras",
         "img": "./image/batata.jpg",
         "precio": 1000
     },
     {
         "id":2,
         "nombre":"Papas",
+        "categoria":"Verduras",
         "img": "./image/Papa-blanca.jpg",
         "precio": 1000
     },
     {
         "id":3,
         "nombre":"Manzanas",
+        "categoria":"Frutas",
         "img": "./image/manzana-verde.jpg",
         "precio": 2000
     },
     {
         "id":4,
         "nombre":"Apio",
+        "categoria":"Verduras",
         "img": "./image/apio.jpg",
         "precio": 1000
     },
     {
         "id":5,
         "nombre":"Naranjas",
+        "categoria":"Frutas",
         "img": "./image/Naranja-ombligo.jpg",
         "precio": 1000
     },
     {
         "id":6,
         "nombre":"Acelgas",
+        "categoria":"Verduras",
         "img": "./image/Acelga.jpg",
         "precio": 1000
     },
     {
         "id":7,
         "nombre":"Aceite de coco",
+        "categoria":"Condimentos",
         "img": "./image/aceite-coco.jpg",
         "precio": 1000
     },
     {
         "id":8,
         "nombre":"Aceite Virgen Extra",
+        "categoria":"Condimentos",
         "img": "./image/Aceite-Virgen-Extra.png",
         "precio": 1000
     },
     {
         "id":9,
         "nombre":"Aceto Balsamico",
+        "categoria":"Condimentos",
         "img": "./image/Aceto-Balsamico.png",
         "precio": 1000
     },
     {
         "id":10,
         "nombre":"Albahaca",
+        "categoria":"Verduras",
         "img": "./image/albahaca.jpg",
         "precio": 1000
     },
     {
         "id":11,
         "nombre":"Arandanos",
+        "categoria":"Frutas",
         "img": "./image/arandanos.png",
         "precio": 1000
     },
     {
         "id":12,
         "nombre":"Banana",
+        "categoria":"Frutas",
         "img": "./image/Banana.jpg",
         "precio": 1000
     },
     {
         "id":13,
         "nombre":"Brocoli",
+        "categoria":"Verduras",
         "img": "./image/brocoli.jpg",
         "precio": 1000
     },
     {
         "id":14,
         "nombre":"Choclo",
+        "categoria":"Verduras",
         "img": "./image/Choclo.jpg",
         "precio": 1000
     },
     {
         "id":15,
         "nombre":"Ciruela",
+        "categoria":"Frutas",
         "img": "./image/Ciruela.jfif",
         "precio": 1000
     },
     {
         "id":16,
         "nombre":"Lechuga morada",
+        "categoria":"Verduras",
         "img": "./image/lechuga-morada.jpg",
         "precio": 1000
     },
     {
         "id":17,
         "nombre":"Limon",
+        "categoria":"Frutas",
         "img": "./image/limon.jpg",
         "precio": 1000
     },
     {
         "id":18,
         "nombre":"Cebolla morada",
+        "categoria":"Verduras",
         "img": "./image/Cebolla-morada.jfif",
         "precio": 1000
     },
     {
         "id":19,
         "nombre":"Kiwi",
+        "categoria":"Frutas",
         "img": "./image/Kiwi.jpg",
         "precio": 1000
     },
     {
         "id":20,
         "nombre":"Paltas",
+        "categoria":"Frutas",
         "img": "./image/palta.jpg",
         "precio": 1000
     }
