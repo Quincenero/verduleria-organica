@@ -1,24 +1,42 @@
-const contenedor = document.querySelector('.cards');
-const apiUrl = 'https://raw.githubusercontent.com/Quincenero/proyecto-marco-espinoza/main/mercaderia.json';
+let productos = [];
 
-fetch(apiUrl)
-  .then(response => {
-    if (!response.ok) {
-      throw new Error('Error al obtener los datos');
-    }
-    return response.json();
+fetch('https://raw.githubusercontent.com/Quincenero/proyecto-marco-espinoza/main/mercaderia.json')
+  .then(res => res.json())
+  .then(data => {
+    console.log("Productos cargados:", data);
+    productos = data;
+    renderProductos("Todos");
   })
-  .then(productos => {
-    productos.forEach(prod => {
-      const card = document.createElement('div');
-      card.className = 'card';
-      card.innerHTML = `
-        <img src="${prod.img}" alt="${prod.alt}" />
-        <h3>${prod.nombre}</h3>
-        <p>ARS ${prod.precio}</p>
-        <button>Añadir al carrito</button>
-      `;
-      contenedor.appendChild(card);
-    });
-  })
-  .catch(error => console.error('Error fetching data:', error));
+  .catch(err => console.error("Error al cargar productos:", err));
+
+const contenedor = document.getElementById("productos");
+const enlaces = document.querySelectorAll('[data-categoria]');
+
+enlaces.forEach(enlace => {
+  enlace.addEventListener("click", e => {
+    e.preventDefault();
+    const categoria = enlace.dataset.categoria;
+    renderProductos(categoria);
+  });
+});
+
+function renderProductos(categoriaSeleccionada) {
+  contenedor.innerHTML = "";
+
+  const filtrados = categoriaSeleccionada === "Todos"
+    ? productos
+    : productos.filter(p => p.categoria === categoriaSeleccionada);
+
+  filtrados.forEach(p => {
+    const card = document.createElement("div");
+    card.className = "card-producto";
+    card.innerHTML = `
+      <img src="${p.img}" alt="${p.nombre}" loading="lazy">
+      <h3>${p.nombre}</h3>
+      <p>$${p.precio}</p>
+    `;
+    contenedor.appendChild(card);
+  });
+}
+
+

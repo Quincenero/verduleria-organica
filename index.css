@@ -136,11 +136,14 @@ main {
 }
 
 .categorias {
-    color: var(--color-dark);
     padding: 1rem;
+    background: linear-gradient(135deg, #f0fff0, #e0f7e0);
+    padding: 2rem;
+    border-radius: 12px;
 }
 
 .categorias h2 {
+    color: var(--color-primary);
     font-size: 2rem;
     margin-bottom: 1rem;
     font-weight: 700;
@@ -153,11 +156,11 @@ main {
 }
 
 .categorias ul li a {
+    color: rgb(225, 127, 127);
     display: flex;
     gap: 1rem;
     font-size: 1.1rem;
     font-weight: 500;
-    color: var(--color-dark);
 }
 
 .cards {
