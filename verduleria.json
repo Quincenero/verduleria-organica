@@ -1,0 +1,122 @@
+[
+    {
+        "id":1,
+        "nombre":"Batatas",
+        "img": "./image/batata.jpg",
+        "precio": 1000
+    },
+    {
+        "id":2,
+        "nombre":"Papas",
+        "img": "./image/Papa-blanca.jpg",
+        "precio": 1000
+    },
+    {
+        "id":3,
+        "nombre":"Manzanas",
+        "img": "./image/manzana-verde.jpg",
+        "precio": 2000
+    },
+    {
+        "id":4,
+        "nombre":"Apio",
+        "img": "./image/apio.jpg",
+        "precio": 1000
+    },
+    {
+        "id":5,
+        "nombre":"Naranjas",
+        "img": "./image/Naranja-ombligo.jpg",
+        "precio": 1000
+    },
+    {
+        "id":6,
+        "nombre":"Acelgas",
+        "img": "./image/Acelga.jpg",
+        "precio": 1000
+    },
+    {
+        "id":7,
+        "nombre":"Aceite de coco",
+        "img": "./image/aceite-coco.jpg",
+        "precio": 1000
+    },
+    {
+        "id":8,
+        "nombre":"Aceite Virgen Extra",
+        "img": "./image/Aceite-Virgen-Extra.png",
+        "precio": 1000
+    },
+    {
+        "id":9,
+        "nombre":"Aceto Balsamico",
+        "img": "./image/Aceto-Balsamico.png",
+        "precio": 1000
+    },
+    {
+        "id":10,
+        "nombre":"Albahaca",
+        "img": "./image/albahaca.jpg",
+        "precio": 1000
+    },
+    {
+        "id":11,
+        "nombre":"Arandanos",
+        "img": "./image/arandanos.png",
+        "precio": 1000
+    },
+    {
+        "id":12,
+        "nombre":"Banana",
+        "img": "./image/Banana.jpg",
+        "precio": 1000
+    },
+    {
+        "id":13,
+        "nombre":"Brocoli",
+        "img": "./image/brocoli.jpg",
+        "precio": 1000
+    },
+    {
+        "id":14,
+        "nombre":"Choclo",
+        "img": "./image/Choclo.jpg",
+        "precio": 1000
+    },
+    {
+        "id":15,
+        "nombre":"Ciruela",
+        "img": "./image/Ciruela.jfif",
+        "precio": 1000
+    },
+    {
+        "id":16,
+        "nombre":"Lechuga morada",
+        "img": "./image/lechuga-morada.jpg",
+        "precio": 1000
+    },
+    {
+        "id":17,
+        "nombre":"Limon",
+        "img": "./image/limon.jpg",
+        "precio": 1000
+    },
+    {
+        "id":18,
+        "nombre":"Cebolla morada",
+        "img": "./image/Cebolla-morada.jfif",
+        "precio": 1000
+    },
+    {
+        "id":19,
+        "nombre":"Kiwi",
+        "img": "./image/Kiwi.jpg",
+        "precio": 1000
+    },
+    {
+        "id":20,
+        "nombre":"Paltas",
+        "img": "./image/palta.jpg",
+        "precio": 1000
+    }
+]

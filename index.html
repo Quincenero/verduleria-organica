@@ -1,135 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verduleria Organica</title>
-    <link rel="stylesheet" href="./index.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Verdulería Orgánica</title>
+  <link rel="stylesheet" href="./index.css" />
+  <!-- Boxicons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 </head>
 <body>
-    <div class="delivery">
-        <p>Envios sin costo dentro de CABA por compras mayores a ARS 40 000</p>
+  <!-- Banner de envío -->
+  <div class="delivery" role="note">
+    <p>Envíos sin costo dentro de CABA por compras mayores a ARS 40.000</p>
+  </div>
+
+  <!-- Encabezado -->
+  <header>
+    <a href="#" class="logo" aria-label="Inicio">
+      <img src="./image/vegetales.png" alt="Logo Verdulería Orgánica" />
+    </a>
+
+    <nav>
+      <ul class="navList">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <div class="right-content">
+      <a href="#" class="nav-btn">Iniciar sesión</a>
+      <i class="bx bx-menu" id="menu-icon" aria-label="Abrir menú" aria-expanded="false"></i>
     </div>
-    <header>
-        <div class="logo">
-            <img src="./image/vegetales.png" alt="Logo Verduleria Organica">
-        </div>
-        
-        <nav>
-            <ul>
-                <li><a href="#productos">Productos</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-        <div id="menu">
-            <a href="" class="nav-btn">Sign In</a>
-            <img src="./image/menu.png" alt="Menu" class="menu-icon">
-        </div>
-    </header>
-    <section class="hero">
-        <h1>Verduleria Organica</h1>
-        <p>Productos frescos y saludables directamente a tu puerta</p>
-        <a href="#productos" class="btn">Ver Productos</a>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="inicio">
+    <h1>Verdulería Orgánica</h1>
+    <p>Productos frescos y saludables directamente a tu puerta</p>
+    <a href="#productos" class="btn">Ver Productos</a>
+  </section>
+
+  <!-- Contenido principal -->
+  <main>
+    <!-- Categorías -->
+    <section class="categorias">
+      <h2>Categorías</h2>
+      <ul>
+        <li><a href="#productos">Verduras</a></li>
+        <li><a href="#productos">Frutas</a></li>
+        <li><a href="#productos">Almacén</a></li>
+      </ul>
     </section>
-    <main>
-        <section class="categorias">
-            <h2>Categorias</h2>
-            <ul>
-                <li><a href="">Verduras</a></li>
-                <li><a href="">Frutas</a></li>
-                <li><a href="">Almacen</a></li>
-            </ul>
-        </section>
-        <section class="cards">
-            
-            <div class="card">
-                <img src="image/lechuga-morada.jpg" alt="Verdura 1">
-                <h3>Lechuga Orgánica</h3>
-                <p>ARS 2000</p>
-                <button>Añadir al carrito</button>
-            </div>
-            <div class="card">
-                <img src="image/manzana-verde.jpg" alt="Fruta 1">
-                <h3>Manzana Roja</h3>
-                <p>ARS 2000</p>
-                <button>Añadir al carrito</button>
-            </div>
-            <div class="card">
-                <img src="image/lechuga-morada.jpg" alt="Verdura 1">
-                <h3>Lechuga Orgánica</h3>
-                <p>ARS 2000</p>
-                <button>Añadir al carrito</button>
-            </div>
-            <div class="card">
-                <img src="image/manzana-verde.jpg" alt="Fruta 1">
-                <h3>Manzana Roja</h3>
-                <p>ARS 2000</p>
-                <button>Añadir al carrito</button>
-            </div>
-            <div class="card">
-                <img src="image/lechuga-morada.jpg" alt="Verdura 1">
-                <h3>Lechuga Orgánica</h3>
-                <p>ARS 2000</p>
-                <button>Añadir al carrito</button>
-            </div>
-            <div class="card">
-                <img src="image/manzana-verde.jpg" alt="Fruta 1">
-                <h3>Manzana Roja</h3>
-                <p>ARS 2000</p>
-                <button>Añadir al carrito</button>
-            </div>
-            <div class="card">
-                <img src="image/lechuga-morada.jpg" alt="Verdura 1">
-                <h3>Lechuga Orgánica</h3>
-                <p>ARS 2000</p>
-                <button>Añadir al carrito</button>
-            </div>
-            <div class="card">
-                <img src="image/manzana-verde.jpg" alt="Fruta 1">
-                <h3>Manzana Roja</h3>
-                <p>ARS 2000</p>
-                <button>Añadir al carrito</button>
-            </div>
-            <div class="card">
-                <img src="image/lechuga-morada.jpg" alt="Verdura 1">
-                <h3>Lechuga Orgánica</h3>
-                <p>ARS 2000</p>
-                <button>Añadir al carrito</button>
-            </div>
-            <div class="card">
-                <img src="image/manzana-verde.jpg" alt="Fruta 1">
-                <h3>Manzana Roja</h3>
-                <p>ARS 2000</p>
-                <button>Añadir al carrito</button>
-            </div>
-            <div class="card">
-                <img src="image/lechuga-morada.jpg" alt="Verdura 1">
-                <h3>Lechuga Orgánica</h3>
-                <p>ARS 2000</p>
-                <button>Añadir al carrito</button>
-            </div>
-            <div class="card">
-                <img src="image/manzana-verde.jpg" alt="Fruta 1">
-                <h3>Manzana Roja</h3>
-                <p>ARS 2000</p>
-                <button>Añadir al carrito</button>
-            </div>
-        </section>
-    </main>
-    
-    <footer>
-        <div class="links">
-            <a href="#productos">Productos</a>
-            <a href="#nosotros">Nosotros</a>
-            <a href="#contacto">Contacto</a>
-        </div>
-        <p>&copy; 2023 Verduleria Organica. Todos los derechos reservados.</p>
-        <div class="social-media">
-            <a href="#"><img src="./image/facebook-circle-logo-24.png" alt="Facebook"></a>
-            <a href="#"><img src="./image/twitter-logo-24.png" alt="Instagram"></a>
-            <a href="#"><img src="./image/instagram-alt-logo-24.png" alt="Twitter"></a>
-        </div>
-    </footer>
+
+    <!-- Cards de productos -->
+    <section class="cards" id="productos">
+      <div class="card">
+        <img src="./image/lechuga-morada.jpg" alt="Lechuga morada orgánica" />
+        <h3>Lechuga Orgánica</h3>
+        <p>ARS 2000</p>
+        <button aria-label="Añadir lechuga orgánica al carrito">Añadir al carrito</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <div class="links">
+      <a href="#inicio">Inicio</a>
+      <a href="#productos">Productos</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+    <p>&copy; 2025 Verdulería Orgánica. Todos los derechos reservados.</p>
+    <div class="social-media">
+      <a href="https://facebook.com" aria-label="Facebook"><img src="./image/facebook-circle-logo-24.png" alt="Facebook" /></a>
+      <a href="https://instagram.com" aria-label="Instagram"><img src="./image/instagram-alt-logo-24.png" alt="Instagram" /></a>
+      <a href="https://twitter.com" aria-label="Twitter"><img src="./image/twitter-logo-24.png" alt="Twitter" /></a>
+    </div>
+  </footer>
+
+  <!-- JS para menú hamburguesa -->
+  <script>
+    const menu = document.getElementById('menu-icon');
+    const navList = document.querySelector('.navList');
+
+    menu.onclick = () => {
+      const isOpen = navList.classList.toggle('open');
+      menu.classList.toggle('bx-x');
+      document.body.classList.toggle('no-scroll');
+      menu.setAttribute('aria-expanded', isOpen);
+      menu.setAttribute('aria-label', isOpen ? 'Cerrar menú' : 'Abrir menú');
+    };
+  </script>
+  <script src="./cart.js"></script>
 </body>
 </html>
