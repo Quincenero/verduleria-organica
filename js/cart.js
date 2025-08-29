@@ -1,9 +1,9 @@
 let productos = [];
 
-fetch('https://raw.githubusercontent.com/Quincenero/proyecto-marco-espinoza/main/mercaderia.json')
+fetch('https://raw.githubusercontent.com/Quincenero/verduleria-organica/refs/heads/main/verduleria.json')
   .then(res => res.json())
   .then(data => {
-    console.log("Productos cargados:", data);
+    //console.log("Productos cargados:", data);
     productos = data;
     renderProductos("Todos");
   })
@@ -34,6 +34,7 @@ function renderProductos(categoriaSeleccionada) {
       <img src="${p.img}" alt="${p.nombre}" loading="lazy">
       <h3>${p.nombre}</h3>
       <p>$${p.precio}</p>
+      <button data-id="${p.id}">Agregar al carrito</button>
     `;
     contenedor.appendChild(card);
   });

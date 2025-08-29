@@ -1,0 +1,49 @@
+footer {
+    background-color: var(--color-primary);
+    color: var(--color-light);
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+footer .social-media {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+footer .social-media a img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+footer .social-media a:hover img {
+    transform: scale(1.1);
+}
+
+footer .links {
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+footer .links a {
+    color: var(--color-light);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+footer .links a:hover {
+    color: var(--color-dark);
+}

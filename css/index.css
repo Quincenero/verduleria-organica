@@ -1,98 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url(../css/header.css);
+@import url(../css/footer.css);
 
-:root {
-    --color-primary: #25ce58;
-    --color-light: #ffffff;
-    --color-dark: #000000;
-}
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    scroll-behavior: smooth;
-    list-style: none;
-    text-decoration: none;
-}
 
-.delivery {
-    background-color: var(--color-primary);
-    color: var(--color-light);
-    text-align: center;
-    padding: 0.3rem;
-    font-size: 0.9rem;
-    font-weight: 500;
-}
 
-.logo img {
-    width: 65px;
-    height: auto;
-}
-
-header {
-    position: relative;
-    top: 0;
-    right: 0;
-    z-index: 1000;
-    padding: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.navList {
-    display: flex;
-}
-
-.navList a {
-    display: inline-block;
-    margin: 0 35px;
-    color: var(--color-dark);
-    font-size: 1.2rem;
-    font-weight: 700;
-    transition: color 0.3s ease;
-}
-
-.navList a:hover {
-    color: var(--color-primary);
-}
-
-.right-content {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-}
-
-.right-content .nav-btn {
-    display: inline-block;
-    background-color: var(--color-primary);
-    color: var(--color-light);
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease, border 0.3s ease;
-}
-
-.right-content .nav-btn:hover {
-    transform: translateY(-5px);
-    background-color: var(--color-light);
-    color: var(--color-primary);
-    border: 2px solid var(--color-primary);
-}
-
-.right-content #menu-icon {
-    font-size: 42px;
-    z-index: 1001;
-    cursor: pointer;
-    margin-left: 25px;
-    display: none;
-}
 
 .hero {
-    background-image: url('./image/hero.jpg'),
+    background-image: url('../image/hero.jpg'),
     linear-gradient(rgba(0, 0, 0, 0.5),
      rgba(0, 0, 0, 0.5));
     color: var(--color-light);
@@ -167,12 +81,12 @@ main {
     color: var(--color-primary);
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;    
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
 }
 
-.cards .card {
+.cards .card-producto {
     background-color: var(--color-light);
     border-radius: 10px;
     padding: 0.5rem 0.25rem;
@@ -181,24 +95,25 @@ main {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.cards .card img {
+.cards .card-producto img {
     width: 230px;
     height: 180px;
 }
 
-.cards .card h3 {
-    font-size: 1.5rem;
+.cards .card-producto h3 {
+    font-size: 1.2rem;
     margin: 0.5rem 0;
     font-weight: 600;
 }
 
-.cards .card p {
+.cards .card-producto p {
     margin: 0.5rem 0;
     font-size: 1rem;
+    color: rgb(161, 96, 85);
     font-weight: 500;
 }
 
-.cards .card button {
+.cards .card-producto button {
     background-color: var(--color-primary);
     color: var(--color-light);
     padding: 0.5rem 1rem;
@@ -209,7 +124,7 @@ main {
     transition: background-color 0.3s ease;
 }
 
-.cards .card:hover {
+.cards .card-producto:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
 }
@@ -264,32 +179,3 @@ footer .links a:hover {
     color: var(--color-dark);
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .right-content #menu-icon {
-        display: block;
-    }
-
-    .navList {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background-color: var(--color-light);
-        flex-direction: column;
-        padding: 1rem;
-    }
-
-    .navList.open {
-        display: flex;
-    }
-
-    .navList a {
-        margin: 0.5rem 0;
-    }
-
-    main {
-        grid-template-columns: 1fr;
-    }
-}

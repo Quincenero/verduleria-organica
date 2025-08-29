@@ -1,15 +1,16 @@
+     
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Verdulería Orgánica</title>
-  <link rel="stylesheet" href="./css/index.css" />
-  <!-- Boxicons -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="./css/contacto.css">
+    <!-- Boxicons -->
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 </head>
 <body>
-  <!-- Banner de envío -->
+    <!-- Banner de envío -->
   <div class="delivery" role="note">
     <p>Envíos sin costo dentro de CABA por compras mayores a ARS 40.000</p>
   </div>
@@ -22,7 +23,7 @@
 
     <nav>
       <ul class="navList">
-        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="./index.html">Inicio</a></li>
         <li><a href="#productos">Productos</a></li>
         <li><a href="#nosotros">Nosotros</a></li>
         <li><a href="./contacto.html">Contacto</a></li>
@@ -36,34 +37,49 @@
     </div>
   </header>
 
-  <!-- Hero -->
-  <section class="hero" id="inicio">
-    <h1>Verdulería Orgánica</h1>
-    <p>Productos frescos y saludables directamente a tu puerta</p>
-    <a href="#productos" class="btn">Ver Productos</a>
-  </section>
+    <form action="https://formspree.io/f/xyzdgnld" method="POST">
+        <label>
+            Your name:
+            <input type="text" name="name">
+        </label>
+        <label>
+            Your email:
+            <input type="email" name="email">
+        </label>
+        <label>
+            Your message:
+            <textarea name="message"></textarea>
+        </label>
+        <!-- your other form fields go here -->
+        <button type="submit">Send</button>
+    </form>
 
-  <!-- Contenido principal -->
-  <main>
-    <!-- Categorías -->
-    <section class="categorias">
-      <h2>Categorías</h2>
-      <ul>
-        <li><a href="#productos" data-categoria="Verduras">Verduras</a></li>
-        <li><a href="#productos" data-categoria="Frutas">Frutas</a></li>
-        <li><a href="#productos" data-categoria="Condimentos">Condimentos</a></li>
-        <li><a href="#productos" data-categoria="Todos">Todos los Productos</a></li>
-      </ul>
+    <section>
+      
+      <div class="direccion">
+        <h3>Dirección:</h3>
+        <p>Av. Corrientes 3255</p>
+        <p>Ciudad Autonoma de Buenos Aires</p>
+      </div>
+      <div class="telefono">
+        <h3>Teléfono:</h3>
+        <p>Teléfono: 0800 000 800</p>
+      </div>
+      <div class="email">
+        <h3>Email:</h3>
+        <p>veduleria_organica@verduleriaorganica.com</p>
+      </div> 
+      <div class="horario">
+        <h3>Horario de atención:</h3>
+        <p>Lunes a Viernes: 9:00 - 18:00</p>
+        <p>Sábados: 10:00 - 14:00</p>
+        <p>Domingos: Cerrado</p>
+      </div> 
     </section>
 
-<!-- Cards de productos -->
-<section class="cards" id="productos"></section>
-  </main>
-
-  <!-- Pie de página -->
-  <footer>
+    <footer>
     <div class="links">
-      <a href="#inicio">Inicio</a>
+      <a href="./index.html">Inicio</a>
       <a href="#productos">Productos</a>
       <a href="#nosotros">Nosotros</a>
       <a href="./contacto.html">Contacto</a>
@@ -89,6 +105,6 @@
       menu.setAttribute('aria-label', isOpen ? 'Cerrar menú' : 'Abrir menú');
     };
   </script>
-  <script src="js/cart.js"></script>
+  <script src="./js/cart.js"></script>
 </body>
 </html>
