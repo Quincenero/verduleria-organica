@@ -138,5 +138,26 @@
         "categoria":"Frutas",
         "img": "./image/palta.jpg",
         "precio": 1000
+    },
+    {
+        "id":21,
+        "nombre":"Carbon vegetal",
+        "categoria":"Condimentos",
+        "img": "./image/carbon.png",
+        "precio": 1000
+    },
+    {
+        "id":22,
+        "nombre":"Maderitas",
+        "categoria":"Condimentos",
+        "img": "./image/maderitas.png",
+        "precio": 1000
+    },
+    {
+        "id":23,
+        "nombre":"Mix de Pimientas",
+        "categoria":"Condimentos",
+        "img": "./image/mix-de-pimientas.png",
+        "precio": 1000
     }
 ]
